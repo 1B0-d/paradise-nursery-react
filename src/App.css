@@ -1,0 +1,64 @@
+.landing-page {
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  padding: clamp(2rem, 7vw, 7rem);
+  color: #fff9e9;
+  background-color: #243b30;
+  background-image: linear-gradient(90deg, #102b20f5 5%, #102b20ce 38%, #102b2057 75%),
+    url('/plants/greenhouse.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.landing-content { max-width: 610px; }
+.eyebrow {
+  font-size: .8rem;
+  font-weight: 750;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+  color: #4b694d;
+}
+.landing-content .eyebrow { color: #e2c68d; }
+.landing-content h1, .page-intro h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -.04em;
+}
+.landing-content h1 {
+  margin-top: 1rem;
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: .9;
+}
+.about-us-content {
+  max-width: 440px;
+  margin: 1.65rem 0 2rem;
+  color: #f4f1dd;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.65;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .55rem;
+  padding: .65rem .95rem;
+  border: 1px solid #24553a;
+  border-radius: .4rem;
+  background: #24553a;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.button:hover:not(:disabled) { background: #173e29; }
+.button:disabled { border-color: #d3dcd0; background: #e4eae1; color: #495b49; }
+.button-light { border-color: #f3dcaa; background: #f3dcaa; color: #253e2c; padding: .85rem 1.2rem; }
+.button-light:hover:not(:disabled) { background: #fff0cc; }
+.page-content { max-width: 1200px; margin: auto; padding: 2.6rem clamp(1rem, 4vw, 2.4rem) 4rem; }
+.page-intro { margin-bottom: 2.5rem; }
+.page-intro h1 { font-size: clamp(2.5rem, 6vw, 4.25rem); margin: .45rem 0; }
+.page-intro p:not(.eyebrow) { color: #526353; line-height: 1.55; }
+@media (max-width: 600px) {
+  .landing-page { background-image: linear-gradient(90deg, #102b20f3, #102b20a1), url('/plants/greenhouse.jpg'); }
+  .page-content { padding-top: 1.75rem; }
+}
